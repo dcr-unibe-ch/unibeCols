@@ -26,13 +26,13 @@ manual](https://intern.unibe.ch/unibe/uniintern/content/e1883/e683686/e695596/e1
 `unibeCols` can be installed from github via
 
 ``` r
-remotes::install_github("CTU-Bern/unibeCols")
+remotes::install_github("dcr-unibe-ch/unibeCols")
 ```
 
-or from CTU Bern’s universe via
+or from DCR’s universe via
 
 ``` r
-install.packages("unibeCols", repos = "https://ctu-bern.r-universe.dev")
+install.packages("unibeCols", repos = c("https://dcr-unibe-ch.r-universe.dev", "https://cloud.r-project.org"))
 ```
 
 ## Example
@@ -61,6 +61,7 @@ The colours can be used in `ggplot2` or `base` graphics…
 ``` r
 library(patchwork)
 library(ggplot2)
+#> Warning: Paket 'ggplot2' wurde unter R Version 4.5.2 erstellt
 # par(mai = c(.5, .5, .5. .5))
 p1 <- ggplot(mtcars, aes(x = disp, y = mpg, col = factor(carb))) + 
   geom_point() + 
@@ -82,5 +83,4 @@ cat(paste0('<p style="color:', unibeRed(), '">This should be red</p>'))
 <p style="color:#e4003c">
 
 This should be red
-
 </p>

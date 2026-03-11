@@ -36,13 +36,13 @@ knitr::opts_chunk$set(
 `unibeCols` can be installed from github via
 
 ```{r, eval = FALSE}
-remotes::install_github("CTU-Bern/unibeCols")
+remotes::install_github("dcr-unibe-ch/unibeCols")
 ```
 
-or from CTU Bern's universe via
+or from DCR's universe via
 
 ```{r, eval = FALSE}
-install.packages("unibeCols", repos = "https://ctu-bern.r-universe.dev")
+install.packages("unibeCols", repos = c("https://dcr-unibe-ch.r-universe.dev", "https://cloud.r-project.org"))
 ```
 
 
